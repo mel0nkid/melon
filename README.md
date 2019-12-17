@@ -1,6 +1,8 @@
 # Melon Project
 this is a project for myself to enjoy.
 
+[中文](https://github.com/mel0nkid/melon/blob/master/README_en.md "中文Readme")
+
 # Project Service
 
 ## Dingtalk
