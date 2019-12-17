@@ -1,0 +1,5 @@
+java/com/xinyuan/assist/comm/AssException.class
+java/com/xinyuan/assist/comm/MsgTypeEnum.class
+java/com/xinyuan/assist/comm/AssErrorEnums.class
+com/xinyuan/assist/comm/dingtalk/NewsResp.class
+com/xinyuan/assist/comm/dingtalk/DtResponse.class

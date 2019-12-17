@@ -1,49 +1,50 @@
-# http://www.gnu.org/software/automake
+# Created by .ignore support plugin (hsz.mobi)
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
+.idea
+.DS_Store
+*.iml
+*.log*
+target/
+# User-specific stuff:
+#.idea/**/workspace.xml
+#.idea/**/tasks.xml
+#.idea/dictionaries
 
-# http://www.gnu.org/software/autoconf
+# Sensitive or high-churn files:
+#.idea/**/dataSources/
+#.idea/**/dataSources.id
+#.idea/**/dataSources.xml
+#.idea/**/dataSources.local.xml
+#.idea/**/sqlDataSources.xml
+#.idea/**/dynamic.xml
+#.idea/**/uiDesigner.xml
 
-autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.guess
-/config.h.in
-/config.log
-/config.status
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+# Gradle:
+#.idea/**/gradle.xml
+#.idea/**/libraries
 
-# https://www.gnu.org/software/libtool/
+# Mongo Explorer plugin:
+#.idea/**/mongoSettings.xml
 
-/ltmain.sh
+## File-based project format:
+*.iws
 
-# http://www.gnu.org/software/texinfo
+## Plugin-specific files:
 
-/texinfo.tex
+# IntelliJ
+/out/
 
-# http://www.gnu.org/software/m4/
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 
-m4/libtool.m4
-m4/ltoptions.m4
-m4/ltsugar.m4
-m4/ltversion.m4
-m4/lt~obsolete.m4
+# JIRA plugin
+atlassian-ide-plugin.xml
 
-# Generated Makefile 
-# (meta build system like autotools, 
-# can automatically generate from config.status script
-# (which is called by configure script))
-Makefile
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
