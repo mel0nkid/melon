@@ -1,38 +1,37 @@
-# Melon Projetc
-这是我个人的一个娱乐项目，平时整点儿感兴趣的玩意儿
+# Melon Project
+this is a project for myself to enjoy.
 
-# 系统功能
+# Project Service
 
-## 钉钉机器人相关
+## Dingtalk
 
-### 新闻推送
-采集的网易新闻，以markdown的形式推动到已注册的钉钉机器人客户端中
-推送时间是：每天上午10点
+### news Push
+collect news from Netease News and generate the news into markdown format
+and then push this formatted msg to DingTalk robot.
+push time: 10 o`clock daily
 
-### 每日一言
-这是抓取金山词霸的每日一言数据
-推送时间：每天早上8点进行推送
+### One Sentence
+collect one sentence from KingSoft Dictionary and push sentence
+to DingTalk robot formatted
+push time: 8 o`clock daily 
 
-### 每日一词
-从单词本随机抽取一个单词，然后反查有道词典，并将反查的结果通过爬虫的方式将内容爬下来
-推送时间：每天中午12点半
+### One Word
+random a word from dictionary and query the detail of word from YouDao
+then Spide the detail msg from YouDao web and push msg to DingTalk
+Push time: 12:30 daily
+
+### Moli AI Robot
+Import Moli AI Robot into this project. But this robot is very Stupid！！！！！
+
+### Tuling AI Robot
+Just Import this and not run it.
+
+## Plan to Develop
+
+### Generate Schedule Task dynamicly
+1. generate by speak to dingtalk Robot, like : metion me, time, do something
+2. generate through admin backgroud
 
 
-### 茉莉机器人
-通过茉莉机器人进行简单的人机交互，感觉茉莉机器人就是个人工智障
+### notes
 
-### 图灵机器人
-这个机器人还没有完全接入
-
-## 待开发功能
-
-### 动态配置调度任务
-1. 通过钉钉机器人对话，如: 提醒我 几年几月几时做什么事情
-    来生成一个指定时间的调度任务
-2. 通过melon-fron前段后台进行调度任务配置
-
-
-### 动态记事本
-结合yuque-sdk 进行语雀笔记的动态生成和管理
-比如对钉钉机器人说：记录 标题：xxxx  正文: xxx. 此时，在语雀文档中就会生成对应的记录
-可以当做简单的记事本
