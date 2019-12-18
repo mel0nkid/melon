@@ -6,4 +6,4 @@ ${news}
 
 ![avatar](${newsImage})
 
-> ###### 发布时间：${publishTime} [新闻](http://39.106.115.98:8080/love/main)
+> ###### 发布时间：${publishTime} [新闻]

@@ -27,7 +27,7 @@ start() {
     echo -e "Melon is already running (pid: $pid)"
   else
     echo -e "Starting Melon"
-    nohup java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000 -jar melon.jar  > logger.log 2>&1 &
+    nohup java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000 -jar melon.jar  > /home/admin/logs/logger.log 2>&1 &
     status
   fi
   return 0

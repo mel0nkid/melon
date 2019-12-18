@@ -10,6 +10,7 @@
         <module>melon-comm</module>
         <module>melon-util</module>
         <module>melon-dao</module>
+        <module>melon-test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

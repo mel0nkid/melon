@@ -19,11 +19,11 @@
         </encoder>
     </appender>
 
-    <appender name="DAILY-NOTES-APP-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${logging.path}/daily-notes-app.log</file>
+    <appender name="MELON-APP-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}/melon-app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 每天一归档 -->
-            <fileNamePattern>${logging.path}/daily-notes-app.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+            <fileNamePattern>${logging.path}/melon-app.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
             <maxHistory>${maxHistory}</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -42,11 +42,11 @@
         </filter>
     </appender>
 
-    <appender name="DAILY-NOTES-BIZ-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${logging.path}/daily-notes-biz.log</file>
+    <appender name="MELON-BIZ-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}/melon-biz.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 每天一归档 -->
-            <fileNamePattern>${logging.path}/daily-notes-biz.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+            <fileNamePattern>${logging.path}/melon-biz.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
             <maxHistory>${maxHistory}</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -60,11 +60,11 @@
         </encoder>
     </appender>
 
-    <appender name="DAILY-NOTES-ERR-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${logging.path}/daily-notes-err.log</file>
+    <appender name="MELON-ERR-APPEND" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}/melon-err.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 每天一归档 -->
-            <fileNamePattern>${logging.path}/daily-notes-err.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+            <fileNamePattern>${logging.path}/melon-err.log.%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
             <maxHistory>${maxHistory}</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -85,14 +85,14 @@
 
 
     <logger name="com.xinyuan.assist" level="DEBUG">
-        <appender-ref ref="DAILY-NOTES-BIZ-APPEND"/>
+        <appender-ref ref="MELON-BIZ-APPEND"/>
     </logger>
 
     <root>
         <level value="info"/>
         <appender-ref ref="console"/>
-        <appender-ref ref="DAILY-NOTES-APP-APPEND"/>
-        <appender-ref ref="DAILY-NOTES-ERR-APPEND"/>
+        <appender-ref ref="MELON-APP-APPEND"/>
+        <appender-ref ref="MELON-ERR-APPEND"/>
     </root>
 
 </configuration>

@@ -4,12 +4,18 @@
  */
 package com.xinyuan.assist.service.msg;
 
+import com.xinyuan.assist.comm.DataConstant;
+import com.xinyuan.assist.dao.DBHelper;
+import com.xinyuan.assist.dao.DingTalkRobotDO;
 import com.xinyuan.assist.service.PushTemplate;
 import com.xinyuan.assist.service.secret.DtRobotSignUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author melonkid
@@ -19,25 +25,19 @@ import org.springframework.stereotype.Component;
 @PropertySource("classpath:application.properties")
 public class MsgAbstractService {
 
-    @Value("${dingtalk.news.secret}")
-    private String secrets;
-
-    @Value("${dingtalk.news.webhook}")
-    private String baseUrls;
+    @Autowired
+    private DBHelper dbHelper;
 
     @Autowired
     protected PushTemplate pushTemplate;
 
 
     protected String[] generateUrls() {
-        String[] urlArr = baseUrls.split(",");
-        String[] secretArr = secrets.split(",");
-        String[] pushUrls = new String[urlArr.length];
-        for (int i = 0; i < urlArr.length; i++) {
-            String pushUrl = DtRobotSignUtil.generateCurr(urlArr[i], secretArr[i]);
-            pushUrls[i] = pushUrl;
+        List<DingTalkRobotDO> robotDOs = dbHelper.getByK(DataConstant.DINGTALK_ROBOT_KEY);
+        if (robotDOs == null || robotDOs.size() < 1) {
+            return new String[0];
         }
-        return pushUrls;
+        return robotDOs.stream().map(DtRobotSignUtil::generateCurr).toArray(String[]::new);
     }
 
 

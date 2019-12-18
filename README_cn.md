@@ -1,6 +1,8 @@
 # Melon Project
 这是我个人的一个娱乐项目，平时整点儿感兴趣的玩意儿
 
+[英文](https://github.com/mel0nkid/melon/blob/master/README.md "英文Readme")
+
 # 系统功能
 
 ## 钉钉机器人相关
