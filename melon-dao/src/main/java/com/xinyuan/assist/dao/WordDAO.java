@@ -1,6 +1,5 @@
 package com.xinyuan.assist.dao;
 
-import com.xinyuan.assist.DBHelper;
 import com.xinyuan.assist.comm.DataBaseNames;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

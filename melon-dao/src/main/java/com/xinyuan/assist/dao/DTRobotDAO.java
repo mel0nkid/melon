@@ -1,6 +1,5 @@
 package com.xinyuan.assist.dao;
 
-import com.xinyuan.assist.DBHelper;
 import com.xinyuan.assist.comm.DataBaseNames;
 import com.xinyuan.assist.comm.DataConstant;
 import com.xinyuan.assist.model.DTRobotDO;
