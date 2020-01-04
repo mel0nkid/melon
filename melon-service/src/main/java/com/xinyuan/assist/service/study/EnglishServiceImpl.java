@@ -1,6 +1,6 @@
 package com.xinyuan.assist.service.study;
 
-import com.xinyuan.assist.dao.WordDao;
+import com.xinyuan.assist.dao.WordDAO;
 import com.xinyuan.assist.util.ExcelUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,7 @@ import java.util.List;
 public class EnglishServiceImpl implements EnglishService {
 
     @Autowired
-    private WordDao wordDao;
+    private WordDAO wordDao;
 
     /**
      * LOG

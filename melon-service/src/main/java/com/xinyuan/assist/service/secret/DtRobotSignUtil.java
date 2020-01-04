@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.xinyuan.assist.dao.DingTalkRobotDO;
+import com.xinyuan.assist.model.DTRobotDO;
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +23,7 @@ public class DtRobotSignUtil {
 
     private static Logger logger = LoggerFactory.getLogger(DtRobotSignUtil.class);
 
-    public static String generateCurr(DingTalkRobotDO robotDO) {
+    public static String generateCurr(DTRobotDO robotDO) {
         try {
             String webhook = robotDO.getWebhook();
             String secret = robotDO.getSecret();
